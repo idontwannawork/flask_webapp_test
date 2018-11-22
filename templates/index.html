@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row center">
+    <h5 class="header col s12 white-text">{{ welcome_message }}</h5>
+</div>
+    
+<form class="col s12" action="/search" method="GET">
+    <div class="col s4">
+    </div>    
+    <div class="input-field col s4">
+            <input id="corp_name" type="text" class="validate" name="username">
+            <label for="corp_name">お名前</label>
+    </div>
+    <div class="col s4">
+    </div>
+
+    <div class="col s12">
+        <!-- <a href="./search" class="btn-large waves-effect waves-light"><i class="material-icons left">search</i>検索</a> -->
+        <button class="btn-large waves-effect waves-light z-depth-3 blue darken-4" type="submit" name="action">乗る！
+            <i class="material-icons right">directions_run</i>
+        </button>
+    </div>
+
+</form>
+
+{% endblock %}
+

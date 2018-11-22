@@ -1,0 +1,8 @@
+---
+applications:
+ - name: webapptest
+   command: python app.py
+   path: .
+   random-route: true
+   memory: 256M
+   buildpack: python_buildpack

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:900,900i|Kosugi+Maru" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet"/>
+        <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet"/> 
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Tanks a gogo</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">TOP</a></li>
+                    </ul>
+            
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">TOP</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center while-text">Tanks a gogo</h1>
+                    <div class="row center">
+                    
+                        {% block content %}
+                                
+                        {% endblock %}
+
+                    </div>
+
+                    <br><br>
+
+                </div>
+            </div>
+            <div class="parallax"><img src="{{url_for('static', filename='image/tankimg.jpg')}}" alt="tankimg"></div>
+        </div>
+            
+        <div class="container">
+            
+            <div id="features" class="section">
+                <br><br>
+                <h3 class="center">features</h3>
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m4">
+                        
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">sentiment_very_satisfied</i></h2>
+                            <h5 class="center">一緒に乗ろう</h5>
+                
+                            <p class="light">名前を入力するだけ。ランダムで。</p>
+                        </div>
+                    </div>
+            
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">people</i></h2>
+                            <h5 class="center"></h5>
+                
+                            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        </div>
+                    </div>
+            
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">settings</i></h2>
+                            <h5 class="center">Easy to work with</h5>
+                
+                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="faq" class="section">
+                <br><br>
+                
+                <h3 class="center">FAQ</h3>
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet1.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet2.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet3.</span></div>
+                    </li>
+                </ul>
+
+            </div>
+            <br><br>
+        </div>
+
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="{{url_for('static', filename='image/nighttankimg.jpg')}}" alt="tankimg2"></div>
+        </div>
+
+        <footer class="page-footer light-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            
+            
+                    </div>
+
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Settings</h5>
+                        <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright center">
+                <div class="container">
+                    Made by <a class="white-text" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+    </body>
+</html>

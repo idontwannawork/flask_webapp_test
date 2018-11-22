@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row">
+
+</div>
+
+<div class="col s12">
+    {% if message %}
+    <p>{{message | safe}}</p>
+    {% endif %}
+</div>
+
+<div class="row center">
+    <a href="./" class="btn waves-effect waves-light z-depth-3"><i class="material-icons left">arrow_back</i>戻る</a>
+</div>
+
+{% endblock %}
