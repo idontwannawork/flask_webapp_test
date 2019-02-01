@@ -22,3 +22,4 @@ Python用webフレームワーク。
 
 HTMLは`layout.html`をベースとして`index.html`などを動的に作成している。レイアウトを変える場合は、ベースの部分であれば`layout.html`を変更すること。
 
+こっちはテスト用ブランチのREADME.mdファイル。
